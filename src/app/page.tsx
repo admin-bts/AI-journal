@@ -1,13 +1,9 @@
-import dynamic from "next/dynamic";
+"use client";
 
-// tldraw uses browser APIs — disable SSR
-const CanvasSpike = dynamic(
-  () => import("@/components/canvas/CanvasSpike").then((m) => m.CanvasSpike),
-  { ssr: false }
-);
+import { CanvasSpike } from "@/components/canvas/CanvasSpike";
 
 // ---------------------------------------------------------------------------
-// Phase 0 entry point
+// Phase 0 entry point — client component so tldraw runs in browser only.
 // Replaced by the journal home screen in Phase 1.
 // ---------------------------------------------------------------------------
 
