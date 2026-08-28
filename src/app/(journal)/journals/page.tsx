@@ -1,4 +1,5 @@
-// Phase 1 — Journal home: lists the user's journals and recent pages
+// Phase 1 — Journal home (/journals): lists the user's journals and recent pages.
+// Lives at /journals so the canvas spike keeps "/" during Phase 0.
 
 export default function JournalHomePage() {
   return (
